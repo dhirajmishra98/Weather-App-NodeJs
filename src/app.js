@@ -92,6 +92,6 @@ app.get('*', (req, res) => {
 })
 
 //to run on local host change port to 3000 and run 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log("Server started on "+port)
 })
