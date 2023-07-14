@@ -40,7 +40,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: "Help",
         name: "Dhiraj Mishra",
-        msg: "Any Help needed? Contact from About me Page",
+        msg: "Any Help needed? Move to About me Page",
     })
 })
 
@@ -87,10 +87,10 @@ app.get('*', (req, res) => {
     res.render('404', {
         title: '404',
         name: "Dhiraj Mishra",
-        errorMessage: "404 error occurred : Page not Found",
+        errorMessage: "404 error occurred, Page not Found!",
     })
 })
 
-app.listen(port, () => {
-    console.log("Server started")
+app.listen(3000, () => {
+    console.log("Server started on "+port)
 })

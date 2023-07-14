@@ -53,3 +53,14 @@ button {
     color: white;
     padding: 8px;
 }
+
+.mailcontact{
+    display: inline;
+    background-color: transparent;
+    padding: 0%;
+}
+
+a {
+    text-decoration: none; /* Removes underline */
+    color: #333; /* Sets the color to a specific value, such as #333 */
+  }
