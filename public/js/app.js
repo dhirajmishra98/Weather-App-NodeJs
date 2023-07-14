@@ -16,7 +16,7 @@ weatherForm.addEventListener('submit',(e)=>{
 
     temperature.textContent = ''
     wind_speed.textContent = ''
-    humidity = ''
+    humidity.textContent = ''
     tryAgain.textContent = ''
     
     //after deploy, remove local host url to use deployed url
@@ -31,7 +31,7 @@ weatherForm.addEventListener('submit',(e)=>{
         temperature.textContent = `${data.forecast.weather_descriptions} : It is ${data.forecast.temperature}°C outside. It feels like ${data.forecast.feelslike}°C`
         wind_speed.textContent = `Wind speed : ${data.forecast.wind_speed} Kilometers/Hour`
         humidity.textContent = `Humidity : ${data.forecast.humidity} g/m3`
-        tryAgain.textContent = "Didn't get disired result? Try with full location name"
+        tryAgain.textContent = "Didn't get desired result? Try with full location name like :- City, State, Country"
 
     })
 })

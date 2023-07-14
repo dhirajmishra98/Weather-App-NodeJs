@@ -40,7 +40,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: "Help",
         name: "Dhiraj Mishra",
-        msg: "Any Help needed? Move to About me Page",
+        msg: "Any Help needed? Move to About Page",
     })
 })
 
@@ -92,6 +92,6 @@ app.get('*', (req, res) => {
 })
 
 //to run on local host change port to 3000 and run 
-app.listen(port, () => {
+app.listen(3000, () => {
     console.log("Server started on "+port)
 })
